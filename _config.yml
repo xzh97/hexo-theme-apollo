@@ -1,11 +1,10 @@
 menu:
     Blog: /
     Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
+    GitHub: https://github.com/xzh97
     Rss: /atom.xml
 
-favicon: /favicon.png
+favicon: /favicon.ico
 logo: /favicon.png
 
 # Comment
