@@ -39,13 +39,13 @@ if theme.gitalk
         })();
     script.
         var params = {
-            clientID:"#{theme.gittalk.oauth.clientID}",
-            clientSecret:"#{theme.gittalk.oauth.clientSecret}",
-            repo:"#{theme.gittalk.repo}",
-            admin:"#{theme.gittalk.admin}",
-            id:"#{theme.gittalk.id}",
-            owner:"#{theme.gittalk.owner}",
-            distractionFreeMode: "#{theme.gittalk.distractionFreeMode}",
+            clientID:"#{theme.gitalk.oauth.clientID}",
+            clientSecret:"#{theme.gitalk.oauth.clientSecret}",
+            repo:"#{theme.gitalk.repo}",
+            admin:"#{theme.gitalk.admin}",
+            id:"#{theme.gitalk.id}",
+            owner:"#{theme.gitalk.owner}",
+            distractionFreeMode: "#{theme.gitalk.distractionFreeMode}",
         };
         var gitalk = new Gitalk(params)
         gitalk.render('gitalk-container');
