@@ -11,8 +11,8 @@ logo: /favicon.png
 # e.g disqus: seansun
 disqus:
 duoshuo:
-gittalk:
-    enable: true #用来做启用判断可以不用
+gitalk:
+    enable: true #用来做启用判断可以不用，目前没有写相关逻辑
     owner: xzh97 #Github 用户名,
     repo: xzh97.github.io #储存评论issue的github仓库名
     admin: ['xzh97'] #Github 用户名,
