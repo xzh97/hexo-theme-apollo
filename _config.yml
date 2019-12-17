@@ -11,6 +11,17 @@ logo: /favicon.png
 # e.g disqus: seansun
 disqus:
 duoshuo:
+gittalk:
+    enable: true #用来做启用判断可以不用
+    owner: xzh97 #Github 用户名,
+    repo: xzh97.github.io #储存评论issue的github仓库名
+    admin: ['xzh97'] #Github 用户名,
+    oauth:
+        clientID: 73f1c80bba01cb73e53d #`Github Application clientID`
+        clientSecret: fb38d78684a17e97a441a4cd0db47dc642423678 #`Github Application clientSecret`
+    id: location.href,      #`Ensure uniqueness and length less than 50`
+    distractionFreeMode: false  #`Facebook-like distraction free mode`
+
 
 # Analytics
 # google-analytics:
