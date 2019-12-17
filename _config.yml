@@ -2,7 +2,6 @@ menu:
     Blog: /
     Archive: /archives/
     GitHub: https://github.com/xzh97
-    Rss: /atom.xml
 
 favicon: /favicon.ico
 logo: /favicon.png
