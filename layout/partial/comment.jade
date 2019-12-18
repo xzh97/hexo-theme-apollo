@@ -39,6 +39,7 @@ if theme.gitalk.enable
             id:"#{theme.gitalk.id}",
             owner:"#{theme.gitalk.owner}",
             distractionFreeMode: "#{theme.gitalk.distractionFreeMode}",
+            title:document.querySelector('.post-title').innerText,
         };
         var gitalk = new Gitalk(params)
         gitalk.render('gitalk-container');
