@@ -18,7 +18,7 @@ gitalk:
     oauth:
         clientID: 73f1c80bba01cb73e53d #`Github Application clientID`
         clientSecret: fb38d78684a17e97a441a4cd0db47dc642423678 #`Github Application clientSecret`
-    id: location.href,      #`Ensure uniqueness and length less than 50`
+    id: location.pathname,      #`Ensure uniqueness and length less than 50`
     distractionFreeMode: false  #`Facebook-like distraction free mode`
 
 
