@@ -36,10 +36,9 @@ if theme.gitalk.enable
             clientSecret:"#{theme.gitalk.oauth.clientSecret}",
             repo:"#{theme.gitalk.repo}",
             admin:"#{theme.gitalk.admin}",
-            id:"#{theme.gitalk.id}",
+            id:window.location.pathname,
             owner:"#{theme.gitalk.owner}",
-            distractionFreeMode: "#{theme.gitalk.distractionFreeMode}",
-            title:document.querySelector('.post-title').innerText,
+            distractionFreeMode: false,
         };
         var gitalk = new Gitalk(params)
         gitalk.render('gitalk-container');
