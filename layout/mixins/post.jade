@@ -17,7 +17,12 @@ mixin posts()
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')
+                    .tags-wrapper
+                        - for( let i = 0, l = item.tags.data.length; i < l; i++)
+                            - console.log(item.tags.data[i].path);
+                            - let tag = item.tags.data[i]
+                            // 这里暂时不能改样式 需要把sass编译一下。 样式只取了apollo.css内的
+                            a.read-more(href= url_for(tag.path))!=__(tag.name)
         - })
 
 //- Archive Page

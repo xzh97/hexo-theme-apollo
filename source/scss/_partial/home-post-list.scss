@@ -17,7 +17,11 @@
             list-style: initial;
         }
     }
-    .read-more {     
-        color: #42b983;
+    .tags-wrapper {
+        .tag{
+            color: #42b983 !important;
+            display: inline-block;
+            margin-right: 1em;
+        }
     }
 }
