@@ -22,7 +22,7 @@ mixin posts()
                             - console.log(item.tags.data[i].path);
                             - let tag = item.tags.data[i]
                             // 这里暂时不能改样式 需要把sass编译一下。 样式只取了apollo.css内的
-                            a.read-more(href= url_for(tag.path))!=__(tag.name)
+                            a.tag(href= url_for(tag.path))!=__(tag.name)
         - })
 
 //- Archive Page
