@@ -1,7 +1,9 @@
 menu:
-    Blog: /
-    Archive: /archives/
-    GitHub: https://github.com/xzh97
+    首页: /
+    归档: /archives/
+    分类: /categories/
+    标签: /tags/
+    关于: /about/
 
 favicon: /favicon.ico
 logo: /favicon.png
@@ -20,4 +22,4 @@ gitalk:
 # ga: UA-xxxxxxxx-x
 
 # Copyright Infomation
-startyear: 2015
+startyear: 2019

@@ -1,8 +1,21 @@
 extends partial/layout
 
 block container
-    include mixins/post
-    +postList()
+    - console.log('is_archive:',is_archive())
+    - console.log('is_tag:',is_tag())
+    - console.log('is_category:',is_category())
+    if is_archive()
+        - console.log('归档')
+        include mixins/post
+        +postList()
+    else if is_tag()
+        - console.log('标签')
+        include mixins/post
+        +postTagsList()
+    else if is_category()
+        - console.log('分类')
+        include mixins/post
+        +postCategoryList()
 
 block pagination
     include mixins/paginator

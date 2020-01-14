@@ -19,14 +19,13 @@ mixin posts()
                         != item.excerpt
                     .tags-wrapper
                         - for( let i = 0, l = item.tags.data.length; i < l; i++)
-                            - console.log(item.tags.data[i].path);
                             - let tag = item.tags.data[i]
-                            // 这里暂时不能改样式 需要把sass编译一下。 样式只取了apollo.css内的
                             a.tag(href= url_for(tag.path))!=__(tag.name)
         - })
 
-//- Archive Page
+//- Archive Page,
 mixin postList()
+    - console.log('运行postList方法')
     .archive
         - var year = 0;
         - var change = false;
@@ -40,6 +39,39 @@ mixin postList()
                 +postInfo(item)
                 a.post-title-link(href= url_for(item.path))
                     != item.title
+        - })
+
+//- Tags Page
+mixin postTagsList()
+    - console.log('运行postTagsList方法')
+    - console.log(site);
+    .archive
+        if site.tags.length
+            - site.tags.each(function (item) {
+                //- console.log(item)
+                h2.archive-year!= item.name
+                .post-item
+                    a.post-title-link(href= url_for(item.path))
+                        != item.length + '篇'
+            - })
+        else
+            h2.archive-year!= '暂时未添加标签'
+
+//- Categories Page
+mixin postCategoryList()
+    .archive
+        - var count = 0;
+        - var change = false;
+        - page.posts.each(function (item) {
+        - var itemYear = date(item.date, 'YYYY') - 0;
+        - change = year !== itemYear;
+        - year = change ? itemYear : year;
+        if change
+            h2.archive-year!= year
+        .post-item
+            +postInfo(item)
+            a.post-title-link(href= url_for(item.path))
+                != item.title
         - })
 
 //- Post Page
